@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="header">
+        <a href="#" class="logo">Arson</a>
+
+        <div class="menu-toggle">
+            <i class="fa-solid fa-bars"></i>
+        </div>
+
+    <nav class="navbar">
+        <a href="index.html" class="active">Home</a>
+        <a href="about.html">About</a>
+        <a href="projet.html">Projet</a>
+        
+        <a href="contact.html">Contact</a>
+    </nav>
+    </header>
+
+<section class="projects" id="projects">
+    <div class="projects-container">
+        <h2 class="section-title">My Projects</h2>
+
+        <div class="projects-grid">
+
+            <div class="project-card">
+                <img src="images/projet1.jpg" alt="Project 1">
+                <div class="project-content">
+                    <h3>Portfolio Website</h3>
+                    <p>Responsive portfolio built with HTML and CSS using modern layout techniques.</p>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <img src="images/projet2.jpg" alt="Project 2">
+                <div class="project-content">
+                    <h3>Todo App</h3>
+                    <p>Task management app with JavaScript for adding, deleting and saving tasks.</p>
+                </div>
+            </div>
+
+
+
+        </div>
+    </div>
+</section>
+<script>
+    const menuToggle = document.querySelector(".menu-toggle");
+    const navbar = document.querySelector(".navbar");
+
+    menuToggle.addEventListener("click", () => {
+        navbar.classList.toggle("active");
+    });
+</script>
+</body>
+</html>

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="header">
+        <a href="#" class="logo">Arson</a>
+
+        <div class="menu-toggle">
+            <i class="fa-solid fa-bars"></i>
+        </div>
+
+    <nav class="navbar">
+        <a href="index.html" class="active">Home</a>
+        <a href="about.html">About</a>
+        <a href="projet.html">Projet</a>
+        
+        <a href="contact.html">Contact</a>
+    </nav>
+    </header>
+
+<section class="contact">
+    <div class="contact-container">
+        <div class="contact-info">
+            <h2>Contact Me</h2>
+            <p>Si vous avez des questions ou  vous voulez collaborer, N'hesite pas  a nous contacter!</p>
+            
+            <div class="info-item">
+                <i class="fas fa-map-marker-alt"></i>
+                <span>Fianarantsoa, Madagascar</span>
+            </div>
+            <div class="info-item">
+                <i class="fas fa-envelope"></i>
+                <span><a href="mailto:ofanevanirina@gmail.com">ofanevanirina@gmail.com</a></span>
+            </div>
+            <div class="info-item">
+                <i class="fas fa-phone"></i>
+                <span><a href="tel:0345096244">+261 34 50 962 44</a></span>
+            </div>
+
+            <div class="contact-socials">
+                <a href="https://www.facebook.com/arson.hajaniaina"><i class="fab fa-facebook-f"></i></a>
+                <a href="http:instagram.com/arsonhajaniaina"><i class="fab fa-instagram"></i></a>
+                <a href="https://wa.me/261345096244"><i class="fab fa-whatsapp"></i></a>
+            </div>
+        </div>"
+
+        <div class="contact-form">
+            <h2>Send Me a Message</h2>
+            <form action="#" method="post">
+                <input type="text" name="name" placeholder="Your Name" required>
+                <input type="email" name="email" placeholder="Your Email" required>
+                <textarea name="message" rows="6" placeholder="Your Message" required></textarea>
+                <button type="submit">Send Message</button>
+            </form>
+        </div>
+    </div>
+</section>
+<script>
+    const menuToggle = document.querySelector(".menu-toggle");
+    const navbar = document.querySelector(".navbar");
+
+    menuToggle.addEventListener("click", () => {
+        navbar.classList.toggle("active");
+    });
+</script>
+</body>
+</html>
